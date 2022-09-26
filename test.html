@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h2 id="name"></h2>
+    <button onclick="onclickShow()">Click</button>
+    <script>
+      var m = 0;
+      const name = ["name 1", "name 2", "name 3", "name 4", "name 5", "jeevi"];
+      function onclickShow() {
+        let i = 0;
+        while (i < name.length) {
+          if (m == i) {
+            document.getElementById("name").innerHTML = name[i];
+          }
+          i++;
+        }
+        m = m == name.length - 1 ? 0 : m + 1;
+      }
+    </script>
+  </body>
+</html>
